@@ -8,7 +8,8 @@ body {
   color: seashell;
   background-color: black;
   opacity: 0.9;
-  align-items: center;
+
+
 }
 
 
@@ -16,12 +17,16 @@ body {
 
 header {
   display: flex;
+  align-items: center;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   height: 69px;
   width: 100%;
   border-bottom: 1px solid seashell;
   color: seashell;
+  top: 0;
+  left: 0;
+  background-color: black;
 
 }
 
@@ -52,3 +57,63 @@ nav span {
 a {
   color: seashell;
 }
+
+/* Main Content*/
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 1300px;
+  margin: 0 auto;
+}
+
+/* Mission Content*/
+
+.mission {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 700px;
+  width: 1200px;
+  text-align: center;
+  margin: 0 25px;
+  position: relative;
+  background-color: black;
+
+}
+
+.mission .image-content {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+  z-index: -3;
+  margin-top: 65px;
+
+}
+.our-mission  {
+  background-color: black;
+}
+
+.mstatement  {
+  background-color: black;
+}
+
+/*.teas {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+
+}
+
+.tea-month {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1000px;
+  text-align: center;
+
+}*/
